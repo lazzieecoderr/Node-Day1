@@ -15,6 +15,9 @@ app.get('/',(req,res)=>{
    res.status(200).send(`<span style="background-color:Aqua;color:black;font-size:100px">Welcome to our first app in nodejs</span>`)
 })
 
+app.get("/data",(req,res)=>{
+    res.status(200).send(`<span style="background-color:Aqua;color:black;font-size:100px">Welcome to the first endpoint /data</span>`)
+})
 
 //running port
 app.listen(PORT,()=>{
